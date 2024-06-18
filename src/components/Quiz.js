@@ -29,7 +29,7 @@ const Quiz = () => {
             {quizState.error && (
                 <div className='results'>
 
-                    <div className='congratulations'>server error</div>
+                    <div className='congratulations'>Server Error</div>
                     <div className='results-info'></div>
                     <div> {quizState.error}</div>
 
@@ -39,10 +39,10 @@ const Quiz = () => {
             )}
             {quizState.showResults && (
                 <div className='results'>
-                    <div className='congratulations'>congrats</div>
+                    <div className='congratulations'>Congratulations!</div>
                     <div className='results-info'>
-                        <div> You have completed the quiz</div>
-                        <div>youve got {quizState.correctAnswersCount} of {" "} {quizState.questions.length}</div>
+                        <div> You have completed the quiz.</div>
+                        <div>You got {quizState.correctAnswersCount} out of {" "} {quizState.questions.length} correct.</div>
                     </div>
                     <div className='next-button' onClick={() => dispatch({ type: 'RESTART' })}>restart</div>
                 </div>
