@@ -9,7 +9,6 @@ root.render(
 
   <QuizProvider>
     <Quiz />
-
   </QuizProvider>
 
 
